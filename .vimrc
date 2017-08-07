@@ -1,29 +1,23 @@
-" Set ',' as the mapleader for custom keybindings
-let mapleader=","
+let mapleader="," " Set ',' as the mapleader for custom keybindings
 
-" Highlight search results
-set hlsearch
+set hlsearch " Highlight search results
 
 " turn off search highlight with ',<space>'
 nnoremap <leader><space> :nohlsearch<CR>
 
-" search as characters are entered
-set incsearch
+set incsearch " search as characters are entered
 
-" Enable syntax highlighting
-syntax enable
+syntax enable " Enable syntax highlighting
 
 set background=dark
 
-" 1 tab == 2 spaces
-set tabstop=2
-set softtabstop=2
-set expandtab
+set tabstop=2 " use 2 columns to represent tab
+set softtabstop=2 " use 2 columns in insert mode
+set expandtab " convert tab to spaces
+set shiftwidth=2 " number of columns with auto indent
 
-" auto indent
-filetype indent on
+filetype indent on " auto indent
 
-set wildmenu
+set wildmenu " command line completion
 
-" cursor matches parenthesis
-set showmatch
+set showmatch " cursor matches parenthesis
